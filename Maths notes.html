@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maths Notes - RGUKT 2nd Year</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f0f4f7, #e3f2fd);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    /* Header */
+    header {
+      background: #0d6efd;
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin: 25px 0;
+      color: #222;
+    }
+
+    /* Modern Subject Button */
+    .subject-btn {
+      display: block;
+      width: 220px;
+      margin: 20px auto;
+      padding: 16px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 35px;
+      background: linear-gradient(135deg, #0d6efd, #00bfff);
+      color: white;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+    .subject-btn:hover {
+      transform: scale(1.08);
+      background: linear-gradient(135deg, #0056b3, #0090ff);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    /* Chapter Buttons */
+    .chapters {
+      display: none;
+      margin-top: 15px;
+    }
+    .chapters a {
+      display: block;
+      width: 180px;
+      margin: 10px auto;
+      padding: 12px;
+      background: linear-gradient(135deg, #28a745, #20c997);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+    .chapters a:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #218838, #17a673);
+    }
+
+    /* Back Button */
+    .back-btn {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 14px 24px;
+      background: linear-gradient(135deg, #0d6efd, #00bfff);
+      color: white;
+      font-weight: bold;
+      border-radius: 35px;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+    .back-btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #0056b3, #0090ff);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    /* Footer */
+    footer {
+      background: rgba(0, 0, 0, 0.85);
+      color: #ccc;
+      padding: 14px 20px;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      border-radius: 12px 12px 0 0;
+      margin-top: 30px;
+      box-shadow: 0 -4px 12px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    footer span {
+      background: linear-gradient(90deg, #00bfff, #0d6efd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    RGUKT 2nd Year Maths Notes
+  </header>
+
+  <h1>Select Subject</h1>
+
+  <!-- Mathematics Button -->
+  <button class="subject-btn" onclick="toggleChapters('maths')">Mathematics</button>
+
+  <!-- Chapters -->
+  <div class="chapters" id="maths">
+    <a href="#">Chapter 1</a>
+    <a href="#">Chapter 2</a>
+    <a href="#">Chapter 3</a>
+    <a href="#">Chapter 4</a>
+    <a href="#">Chapter 5</a>
+    <a href="#">Chapter 6</a>
+  </div>
+
+  <!-- Back Button -->
+  <a href="home page.html" class="back-btn">⬅ Back to Home</a>
+
+  <!-- Footer -->
+  <footer>
+    ©  Developed by <span>Thushanth</span> <br>  2024 batch rgukt
+  </footer>
+
+  <!-- Toggle Chapters Script -->
+  <script>
+    function toggleChapters(id) {
+      let div = document.getElementById(id);
+      div.style.display = div.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
