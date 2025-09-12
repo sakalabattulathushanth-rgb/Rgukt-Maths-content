@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/syllabus", "destination": "/syllabus.html" },
+    { "source": "/notes", "destination": "/notes.html" },
+    { "source": "/papers", "destination": "/papers.html" },
+    { "source": "/formulas", "destination": "/formulas.html" }
+  ]
+}
